@@ -8,7 +8,3 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_PS1164ML.mk
 
-COMMON_LUNCH_CHOICES := \
-    omni_PS1164ML-user \
-    omni_PS1164ML-userdebug \
-    omni_PS1164ML-eng
