@@ -1,1 +1,1 @@
-# -android_device_digma_PS1164ML
+android_device_digma_PS1164ML
