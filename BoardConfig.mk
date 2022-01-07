@@ -73,4 +73,12 @@ BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 BOARD_USES_LEGACY_MTK_AV_BLOB := true
 BOARD_SUPPRESS_EMMC_WIPE := true
+TW_DEFAULT_LANGUAGE := ru
+TW_INCLUDE_NTFS_3G := true
+TW_MAX_BRIGHTNESS := 125
+TW_DEFAULT_BRIGHTNESS := 90
+HAVE_SELINUX := true
 TW_INCLUDE_CRYPTO := true
+
+# Show build time on the splash screen
+TW_DEVICE_VERSION=$(shell date '+%Y%m%d') by depesh1977
