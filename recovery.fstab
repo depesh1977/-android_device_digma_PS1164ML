@@ -5,9 +5,8 @@
 /protect_f           ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1     flags=display="Protect_f"
 /protect_s           ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2     flags=display="Protect_s"
 /nvdata              ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata       flags=display="Nvdata"
-/11230000.msdc0*     auto     vfat                                                               flags=display="11230000.msdc0*";logical
-/11240000.msdc1*     auto     auto                                                               flags=display="11240000.msdc1*";logical
-/mt_usb*             auto     vfat                                                               flags=display="Mt_usb*";logical
+/external_sd	auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="External SDcard";storage;wipeingui;removable;backup=0
+/usbotg		auto    /dev/block/sda1		/dev/block/sda		flags=display="Usb-Otg";storage;removable;backup=0
 /persistent          emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp          flags=display="Persistent"
 /nvram               emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram        flags=display="Nvram"
 /proinfo             emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo      flags=display="Proinfo"
