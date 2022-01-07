@@ -14,23 +14,23 @@ on:
       LIBRARY_BRANCH:
         description: 'LIBRARY_BRANCH'
         required: true
-        default: 'twrp-9.0'
+        default: 'twrp-7.1'
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/depesh1977/BQ_TWRP_9.0_ENCRYPT'
+        default: 'https://github.com/depesh1977/android_device_digma_PS1164ML-twrp-7.0'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'main'
+        default: 'android_7.0'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/BQ/BQ5519G'
+        default: 'device/digma/PS1164ML'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'BQ5519G'
+        default: 'PS1164ML'
       DEVICE_TYPE:
         description: 'DEVICE_TYPE'
         required: true
@@ -95,10 +95,11 @@ jobs:
         PATH=~/bin:$PATH
         cd ${{ steps.pwd.outputs.pwd }}
         export ALLOW_MISSING_DEPENDENCIES=true
+        export LC_ALL=C
         source build/envsetup.sh
         lunch ${{ github.event.inputs.LIBRARY_NAME }}_${{ github.event.inputs.DEVICE_NAME }}-eng 
         make clean
-        make ${{ github.event.inputs.DEVICE_TYPE }}image -j$(nproc --all)
+        make ${{ github.event.inputs.DEVICE_TYPE }}image -j5(nproc --all)
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
