@@ -18,7 +18,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/depesh1977/BQ_TWRP_9.0_ENCRYPT'
+        default: 'https://github.com/depesh1977/android_device_digma_PS1164ML-twrp-7.0'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
