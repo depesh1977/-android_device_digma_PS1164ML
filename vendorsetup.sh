@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_PS1164ML-user
-add_lunch_combo omni_PS1164ML-userdebug
 add_lunch_combo omni_PS1164ML-eng
