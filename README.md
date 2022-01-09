@@ -28,3 +28,6 @@ android_device_digma_PS1164ML
 Питание
 Емкость аккумулятора5000 мAч
 
+
+для старта системы прошить патч https://disk.yandex.ru/d/nOIWGaTZKQ0bnw
+
